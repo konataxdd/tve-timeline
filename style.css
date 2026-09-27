@@ -24,31 +24,38 @@
 
 .vis-item.gulag {
   background-color: #721c24;
-  border-color: #58151c;
+  border-color: #721c24;
 }
 
 .vis-item.zirya {
   background-color: #d9383a;
+  border-color: #d9383a;
 }
 
 .vis-item.ocean {
   background-color: #5ca1e6;
+  border-color: #5ca1e6;
 }
 
 .vis-item.luna {
   background-color: #8a2be2;
+  border-color: #8a2be2;
 }
 
 .vis-item.f {
-  background-color: #00ff6a;
+  background-color: #00ff88;
+  border-color: #00ff88;
 }
 
 .vis-item.reef {
   background-color: #04ff00;
+  border-color: #04ff00;
 }
 .vis-item.wrath {
-  background-color: #461313;
+  background-color: black;
+  border-color: black;
 }
 .vis.item.tvg {
-  background-color: darkgreen
+  background-color: darkgreen;
+  border-color: darkgreen;
 }
