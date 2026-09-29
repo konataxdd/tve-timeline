@@ -23,8 +23,8 @@
 }
 
 .vis-item.norm {
-  background-color: khaki;
-  border-color: khaki;
+  background-color: rgb(161, 153, 89);
+  border-color: rgb(161, 153, 89);
 }
 .vis-item.gulag {
   background-color: #721c24;
@@ -55,7 +55,28 @@
   background-color: black;
   border-color: black;
 }
+
+.vis-item.fry {
+  background-color: gray;
+  border-color: grey;
+}
+
 .vis-item.tvg {
   background-color: darkgreen;
   border-color: darkgreen;
+}
+
+
+.vis-item.grief .vis-dot {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border-radius: 0;
+}
+
+.vis-item.ob .vis-dot {
+  border-radius: 0;
+}
+
+.vis-item.bd {
+  background-color: pink;
+  border-color: pink;
 }
