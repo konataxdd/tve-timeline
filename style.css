@@ -23,8 +23,8 @@
 }
 
 .vis-item.norm {
-  background-color: yellowgreen;
-  border-color: yellowgreen;
+  background-color: khaki;
+  border-color: khaki;
 }
 .vis-item.gulag {
   background-color: #721c24;
@@ -37,8 +37,8 @@
 }
 
 .vis-item.ocean {
-  background-color: #5ca1e6;
-  border-color: #5ca1e6;
+  background-color: #007fff;
+  border-color: #007fff;
 }
 
 .vis-item.luna {
