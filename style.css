@@ -22,6 +22,10 @@
   width: 3px;
 }
 
+.vis-item.norm {
+  background-color: yellowgreen;
+  border-color: yellowgreen;
+}
 .vis-item.gulag {
   background-color: #721c24;
   border-color: #721c24;
@@ -47,10 +51,6 @@
   border-color: #00ff88;
 }
 
-.vis-item.reef {
-  background-color: #04ff00;
-  border-color: #04ff00;
-}
 .vis-item.wrath {
   background-color: black;
   border-color: black;
