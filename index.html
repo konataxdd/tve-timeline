@@ -27,7 +27,7 @@
 
   <script>
     const container = document.getElementById('visualization');
-    const groups = new vis.DataSet([{id: "gr", content: "Groups / Bases"},{id: "ud", content: ""}]);
+    const groups = new vis.DataSet([{id: "gr", content: "Groups / Major Builds"},{id: "ud", content: ""}]);
 
     const items = new vis.DataSet([
   {
@@ -61,7 +61,7 @@
     "content": "Early North-South Spawn Ocean",
     "start": "2020-03-17",
     "end": "2020-04-05",
-    "group": "ud",
+    "group": "gr",
     "className": "ocean",
     "title": "March 17th, 2020 - April 5th, 2020<br>Sheep runs a 20 block wide ocean maker for around 10,000 blocks, flooding spawn for the first time.<br>Mostly drained during the spawn decimation, and completely by October.",
     "url": "https://true-vanilla.fandom.com/wiki/JustAnotherSheep"
@@ -122,7 +122,7 @@
     "start": "2020-04-20",
     "end": "2020-05-14",
     "group": "ud",
-    "classname": "zirya",
+    "className": "zirya",
     "title": "April 20th, 2020 - May 14th, 2020<br>Gulag Gang makes an alliance with Dauntless, until unilaterally betraying them in a mass griefing event."
   },
   {
@@ -148,7 +148,7 @@
     "content": "End Portal Griefing War",
     "start": "2020-04-30",
     "end": "2020-05-24",
-    "group": "ud",
+    "group": "gulag",
     "title": "April 30th, 2020 - May 24th, 2020<br>A player named Lidee set out to destroy all 128 end portals on TVE.<br>Gulag Gang and Dauntless declared Lidee KOS (Kill On Sight), fighting him at spawn and even raiding his base. Portals were protected by lava.<br>Lidee was thought to have succeeded, but a while later it turned out that Lidee had kept 2 portals to himself.",
     "url": "https://true-vanilla.fandom.com/wiki/Lidee"
   },
@@ -317,7 +317,7 @@
     "end": "2020-06-29",
     "group": "gr",
     "className": "zirya",
-    "title": "June 5th 2020<br>Creation of The Coalition, composed of Gulag Gang and Dauntless (25 players in total), ending with failure to organize the TVE Reunion.",
+    "title": "June 5th, 2020 - June 29th, 2020<br>Creation of The Coalition, composed of Gulag Gang and Dauntless (25 players in total), ending with failure to organize the TVE Reunion.",
     "url": "https://true-vanilla.fandom.com/wiki/The_Coalition"
   },
   {
@@ -352,7 +352,7 @@
     "content": "Massive Spawn Ocean I",
     "start": "2020-07-10",
     "end": "2020-10-19",
-    "group": "ud",
+    "group": "gr",
     "className": "ocean",
     "title": "July 10th, 2020 - October 19th, 2020<br>The First Massive Spawn Ocean is created at 0 0 by JustAnotherSheep in a 700x100 area using ocean makers.<br>On its last day, it is drained by an effort of 6 people.",
     "url": "https://true-vanilla.fandom.com/wiki/JustAnotherSheep"
@@ -456,7 +456,7 @@
     "content": "Massive Spawn Ocean II",
     "start": "2020-11-19",
     "end": "2021-04-25",
-    "group": "ud",
+    "group": "gr",
     "className": "ocean",
     "title": "November 19th 2020<br>JustAnotherSheep works with Cwedin78 and AncyenT to make the Second Massive Spawn Ocean.",
     "url": "https://true-vanilla.fandom.com/wiki/JustAnotherSheep"
@@ -591,6 +591,7 @@
     "content": "Censorship of the Community Discord",
     "start": "2021-02-16",
     "group": "ud",
+    "className": "grief",
     "title": "February 16th, 2021<br>sleepylessons enforces Discord TOS rules on the TVE Discord<br>(volunteer moderators, banning problematic users).",
     "type": "point",
     "url": "https://true-vanilla.fandom.com/wiki/Sleepylessons"
@@ -654,11 +655,11 @@
   },
   {
     "id": 211,
-    "content": "North Canal",
+    "content": "North Canal (10k)",
     "start": "2021-03-23",
     "group": "ud",
     "className": "norm ob",
-    "title": "March 23rd, 2021<br>The North Canal is started by BigManReef and the Canal Co-Op.<br>The goal of 10k blocks is surpassed on the 29th.<br>Today, the canal is over 100k blocks long due to secret efforts.",
+    "title": "March 23rd, 2021<br>The North Canal is started by BigManReef and the Canal Co-Op.<br>The goal of 10k blocks is surpassed on the 29th.",
     "type": "point",
     "url": "https://true-vanilla.fandom.com/wiki/North_Canal"
   },
@@ -694,12 +695,22 @@
   },
   {
     "id": 217,
+    "content": "Spawn Pubes",
+    "start": "2021-04-15",
+    "end": "2022-08-12",
+    "group": "gr",
+    "className": "gulag",
+    "title": "April 15th, 2021 - August 12th, 2022<br>The Spawn Pubes are built to prevent future flooding and spawn is fully drained.<br>Griefed by gite",
+    "url": "https://true-vanilla.fandom.com/wiki/Pubes"
+  },
+  {
+    "id": 218,
     "content": "Spawn Ocean War",
     "start": "2021-04-15",
     "end": "2021-04-25",
     "group": "ud",
     "className": "gulag",
-    "title": "April 15th, 2021 - April 25th, 2021<br>The Spawn Pubes are built to prevent future flooding and spawn is fully drained.",
+    "title": "April 15th, 2021 - April 25th, 2021<br>The 2nd Massive Spawn Oeean is fully drained and the Spawn Pubes are built.",
     "url": "https://true-vanilla.fandom.com/wiki/Pubes"
   },
   {
@@ -877,7 +888,7 @@
     "start": "2021-11-02",
     "end": "2022-01-21",
     "group": "ud",
-    "classname": "grief",
+    "classname": "norm grief",
     "title": "November 2nd, 2021 - January 21, 2021<br>The entirety of the end island is dug out by lildrainpipe and WhipsterStain.",
     "url": "https://true-vanilla.fandom.com/wiki/Main_End_Island_Excavation"
   },
@@ -928,6 +939,308 @@
     "title": "19th December, 2021<br>In an effort from Gulag Gang and N*ggang, the pubes grow to the new 1.18 height limit.",
     "type": "point",
     "url": "https://true-vanilla.fandom.com/wiki/Pubes"
+  },
+  {
+    "id": 286,
+    "content": "Decreasing Activity",
+    "start": "2022-01-01",
+    "group": "ud",
+    "title": "During January 2022<br>Efic and Mirovski start to break end portals in a failed attempt to make an End portal war.<br>The remaining playerbase goes to their respective bases, most of the activity via chat.",
+    "type": "point",
+  },
+  {
+    "id": 288,
+    "content": "Suicide Notes Base",
+    "start": "2022-02-01",
+    "group": "ud",
+    "className": "ob",
+    "title": "During February 2022<br>The suicide notes base by an unknown player near spawn, gets built, containing notes about his thoughts.",
+    "type": "point",
+  },
+  {
+    "id": 289,
+    "content": "Another Spawn Base",
+    "start": "2022-02-14",
+    "group": "ud",
+    "className": "ob",
+    "title": "During February 2022<br>A small, different \"spawn base\" gets built by unknown players, staying around for a week.<br>The base itself has stood for years since.",
+    "type": "point",
+  },
+  {
+    "id": 291,
+    "content": "WhipsterStain-obyx conflict",
+    "start": "2022-03-03",
+    "group": "ud",
+    "title": "March 3rd, 2022<br>A fight at spawn leads to a 2 month long tense rivarly between obyx and WhipsterStain.",
+    "type": "point",
+  },
+  {
+    "id": 292,
+    "content": "Spawn Gardens",
+    "start": "2022-03-04",
+    "end": "2022-03-20",
+    "group": "ud",
+    "className": "ob",
+    "title": "March 4th, 2022<br>lildrainpipe and WhipsterStain start helping new players at spawn, creating the short lived spawn gardens.<br>The overarching conflict leads to the lavacasting (lavabox) of the spawn gardens by BigManReef.",
+    "url": "https://true-vanilla.fandom.com/wiki/Whipster%27s_spawn_gardens"
+  },
+  {
+    "id": 293,
+    "content": "TVE Birthday Party II",
+    "start": "2022-03-06",
+    "group": "ud",
+    "className": "bd",
+    "title": "6th March, 2022<br>The 2022 TVE Birthday Parties are held, by TVG and Red_ICE.<br>They hit a combined peak of 20 players, the highest in a year and the highest for an event.",
+    "type": "point",
+  },
+  {
+    "id": 298,
+    "content": "TVE updates to 1.18.2",
+    "start": "2022-03-12",
+    "group": "ud",
+    "title": "March 12th, 2022",
+    "type": "point",
+  },
+  {
+    "id": 302,
+    "content": "TVE Crash",
+    "start": "2022-03-16",
+    "group": "ud",
+    "title": "March 16th, 2022<br>TVE crashes after a failed Tp exploit attempt from Churka and obyx.<br>This changes anticheat restrictions for some time.",
+    "type": "point",
+  },
+  {
+    "id": 306,
+    "content": "Cat Guardians",
+    "start": "2022-03-23",
+    "end": "2022-04-17",
+    "group": "gr",
+    "className": "cat",
+    "title": "March 23rd, 2022 - April 17th, 2022<br>A trio known for their tp exploit, which they were secretive about.<br>Its members eventually joined Spawn Nomads.",
+    "url": "https://true-vanilla.fandom.com/wiki/Cat_Guardians"
+  },
+  {
+    "id": 307,
+    "content": "Tp exploit",
+    "start": "2022-03-14",
+    "end": "2022-12-15",
+    "group": "ud",
+    "className": "cat",
+    "title": "March 2th, 2022 - December 15th, 2022<br>The tp exploit is found and experimented with by the Cat Guardians.<br>Namely, world borders are reached and travel is trivialised.<br>Initially gatekept by the Cat Guardians, later refined and utilized by Spawn Nomads until its patching.",
+    "url": "https://true-vanilla.fandom.com/wiki/Tp_exploit"
+  },
+  {
+    "id": 308,
+    "content": "World Border Mania",
+    "start": "2022-03-14",
+    "end": "2022-03-28",
+    "group": "ud",
+    "className": "cat",
+    "title": "24th March, 2022 - March 28th, 2022<br>Nether world borders are finally reached on TVE, among many others.",
+    "url": "https://true-vanilla.fandom.com/wiki/World_border"
+  },
+  {
+    "id": 314,
+    "content": "Pluto's Spawn Base",
+    "start": "2022-04-17",
+    "end": "2022-05-05",
+    "group": "ud",
+    "title": "April 17th, 2022 - April 30th, 2023<br>The spawn base, later the initial Spawn Nomads base, is created by pluto.<br>Attracted activity especially from new players.<br>Destroyed by withers after abandonment.",
+    "className": "nomads",
+    "url": "https://true-vanilla.fandom.com/wiki/Spawn_base_(Spawn_Nomads)",
+  },
+  {
+    "id": 315,
+    "content": "Spawn Nomads",
+    "start": "2022-04-17",
+    "end": "2023-04-30",
+    "group": "gr",
+    "className": "nomads",
+    "title": "April 17th, 2022 - <br>The Spawn Nomads group is created by pluto.<br>It was the final lasting group before the death of TVE, known for exploits and the Tukolh base.",
+    "description": "April 17th, 2022: The Spawn Nomads group is created by pluto."
+  },
+  {
+    "id": 316,
+    "content": "North Canal (100k)",
+    "start": "2022-04-18",
+    "group": "ud",
+    "title": "April 18th, 2022<br>It is found that the old North Canal quietly grew up to 100k out due to secret efforts, being that its final milestone.",
+    "type": "point",
+    "className": "norm ob",
+    "url": "https://true-vanilla.fandom.com/wiki/North_Canal"
+  },
+  {
+    "id": 317,
+    "content": "ForestBot",
+    "start": "2022-04-20",
+    "group": "ud",
+    "className": "norm ob",
+    "title": "April 20th, 2022<br>The beloved ForestBot spawns on TVE for the first time.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/ForestBot"
+  },
+  {
+    "id": 318,
+    "content": "Final non-tp Border Travel",
+    "start": "2022-04-21",
+    "group": "ud",
+    "title": "April 21st, 2022<br>The overworld Z+ border is reached by Feb29, on foot.<br>Spawn Nomads scrambles to remove proof of the tp exploit at the border to hide its existence.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Feb29(UnreadableCode)"
+  },
+  {
+    "id": 321,
+    "content": "Exploits",
+    "start": "2022-05-19",
+    "group": "ud",
+    "title": "May 19th, 2022<br>Gite, on his own, starts to find out about the Tp exploit and other ones.<br>These are later consolidated and put into practice by Spawn Nomads.",
+    "className": "nomads",
+    "type": "point",
+  },
+  {
+    "id": 322,
+    "content": "Nomads & Friends",
+    "start": "2022-05-26",
+    "end": "2022-12-3",
+    "group": "gr",
+    "className": "nomads",
+    "title": "May 26th, 2022 - December 3rd, 2022<br>A group that split from Spawn Nomads in order to seek its downfall.<br>The root was a fight between Chile_Curtido and gite, resulting in the grief of the Spawn Nomads permanent base.<br>",
+    "url": "https://true-vanilla.fandom.com/wiki/Nomads_%26_Friends"
+  },
+  {
+    "id": 328,
+    "content": "Rollback",
+    "start": "2022-06-27",
+    "group": "ud",
+    "title": "June 26-28th, 2022<br>A small overworld rollback is done (a save from June 18-20th) due to world/chunk corruption.",
+    "type": "point",
+  },
+  {
+    "id": 331,
+    "content": "Spawn Party IV",
+    "start": "2022-07-17",
+    "group": "ud",
+    "className": "nomads",
+    "title": "July 17th, 2022<br>The Fourth Spawn Party is held by the Spawn Nomads.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Fourth_Spawn_Party"
+  },
+  {
+    "id": 333,
+    "content": "Mintraft Gets Scammed",
+    "start": "2022-07-28",
+    "group": "ud",
+    "title": "July 28th, 2022<br>The Spawn Nomads claims the Necro Town books from Mintraft and LordElGato.",
+    "className": "nomads grief",
+    "type": "point",
+    "url": "https://www.youtube.com/watch?v=1-LxnHF2OOw"
+  },
+  {
+    "id": 339,
+    "content": "Amongus Poopers",
+    "start": "2022-09-03",
+    "group": "ud",
+    "className": "ob",
+    "title": "September 3rd, 2022<br>The Amongus Poopers mapart at spawn is finished.",
+    "type": "point",
+  },
+  {
+    "id": 340,
+    "content": "New Spawn Ocean",
+    "start": "2022-09-05",
+    "group": "ud",
+    "className": "ocean ob",
+    "title": "September 5th, 2022<br>A new spawn ocean is created under the Amongus mapart.",
+    "type": "point",
+  },
+  {
+    "id": 342,
+    "content": "Spawn Party V",
+    "start": "2022-09-15",
+    "group": "ud",
+    "className": "nomads",
+    "title": "September 15th, 2022",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Fifth_Spawn_Party"
+  },
+  {
+    "id": 343,
+    "content": "Tukolh",
+    "start": "2022-09-18",
+    "end": new Date(),
+    "group": "gr",
+    "className": "nomads ob",
+    "title": "September 18th, 2022<br>The spawn base Tukolh (The United Kingdom Of Lithuanian Humans) is created by Efic.<br>Activity starts to pick up exactly a month later.<br>It became the main hub of activity for TVE.<br>Standing to this day.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Tukolh_(spawn_base)"
+  },
+  {
+    "id": 348,
+    "content": "Tukolh Grief I",
+    "start": "2022-10-21",
+    "group": "ud",
+    "className": "nomads grief",
+    "title": "October 21st, 2022<br>Tukol suffers its first small grief at the hands of Nomads & Friends.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Tukolh_(spawn_base)"
+  },
+  {
+    "id": 350,
+    "content": "Tukolh Grief II",
+    "start": "2022-11-06",
+    "group": "ud",
+    "className": "nomads grief",
+    "title": "November 6th, 2022<br>Tukolh suffers its first big grief.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Tukolh_(spawn_base)"
+  },
+  {
+    "id": 351,
+    "content": "Tukolh Grief III",
+    "start": "2022-11-11",
+    "group": "ud",
+    "className": "nomads grief",
+    "title": "November 6th, 2022<br>A grief more severe than the last.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Tukolh_(spawn_base)"
+  },  
+  {
+    "id": 352,
+    "content": "Tukolh Grief IV",
+    "start": "2022-11-13",
+    "group": "ud",
+    "className": "nomads grief",
+    "title": "November 6th, 2022<br>Tukolh is terraformed into a Plains biome.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Tukolh_(spawn_base)"
+  },
+  {
+    "id": 353,
+    "content": "Tukolh Grief V",
+    "start": "2022-12-02",
+    "group": "ud",
+    "className": "nomads grief",
+    "title": "December 2nd, 2022<br>Tukolh suffers its final big grief after a month of them.<br>The base transitions into an underground building style to make future griefing more difficult.<br>The griefers (Nomads & Friends) lose activity and end up ceasing operations.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/Tukolh_(spawn_base)"
+  },
+  {
+    "id": 358,
+    "content": "Ownership Transfer III",
+    "start": "2022-12-15",
+    "group": "ud",
+    "title": "December 15th, 2022<br>Now run by NaiHaz (and obyx), TVE comes back in 1.19.2.",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/NaiHaz"
+  },
+  {
+    "id": 360,
+    "content": "Anticheat Restrictions",
+    "start": "2022-12-18",
+    "className": "grief",
+    "title": "December 18th, 2022<br>Seeking to attract new player activity, TVE's new admins restrict flight and remove nether roof access (automatically removing bedrock holes).",
+    "type": "point",
+    "url": "https://true-vanilla.fandom.com/wiki/NaiHaz%27s_period_of_TVE_(2023)"
   },
 ]);
   
