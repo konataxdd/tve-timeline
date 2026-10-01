@@ -26,6 +26,11 @@
   background-color: gold;
   border-color: gold;
 }
+
+.vis-item.vis-background.dead {
+  background-color: black;
+}
+
 .vis-item.gulag {
   background-color: #721c24;
   border-color: #721c24;
