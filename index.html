@@ -1460,7 +1460,7 @@
   },
 
   {
-    "id": 415,
+    "id": 416,
     "content": "TVE Wiki Restarts",
     "start": "2026-04-12",
     "group": "ud",
@@ -1475,6 +1475,9 @@
       editable: false,
       selectable: false,
       align: 'left',
+      loadingScreenTemplate: function () {
+        return "<h1>Loading...</h1>";
+      },      
       template: function (item) {
         if (item.url) {
           return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
