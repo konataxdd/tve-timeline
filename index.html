@@ -1475,9 +1475,6 @@
       editable: false,
       selectable: false,
       align: 'left',
-      loadingScreenTemplate: function () {
-        return "<h1>Loading...</h1>";
-      },
       template: function (item) {
         if (item.url) {
           return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
