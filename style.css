@@ -28,7 +28,7 @@
 }
 
 .vis-item.vis-background.dead {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.66);
 }
 
 .vis-item.gulag {
