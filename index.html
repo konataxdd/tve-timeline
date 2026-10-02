@@ -31,6 +31,12 @@
 
     const items = new vis.DataSet([
   {
+    id: "A", content: "Golden Era", 
+    title: "March 3rd, 2020 - June 29th, 2020<br>A time of chaos, curiosity, exploration and freedom, where nothing has been tried before.<br>Players who joined during this era are considered OG.<br>Playercount averaged above 18 at peak time, with lag caused by unrestricted travelling being common.<br>This is the time when TVE had 0 restrictive plugins, until the crash dupe.",
+    start: "2020-03-06", end: "2020-06-29",
+    type: "background", className: "gold"
+  },
+  {
     "id": 124,
     "content": "TVE Start Date",
     "start": "2020-03-06",
@@ -339,6 +345,12 @@
     "url": "https://true-vanilla.fandom.com/wiki/Major_leavings"
   },
   {
+    id: "B", content: "Cooling Era", 
+    title: "June 30th, 2020 - November 17th, 2020<br>Feeling betrayed, most OG players leave, and as the server cools down, a loyal playerbase is estabilished.<br>The last pure era without dupes.",
+    start: "2020-06-30", end: "2020-11-17",
+    type: "background", className: "cool"
+  },
+  {
     "id": 162,
     "content": "Glitched Portal",
     "start": "2020-06-30",
@@ -442,6 +454,12 @@
     "group": "ud",
     "title": "November 17th, 2020 - December 20th, 2020<br>A player named LeftyIsHere starts using a secret dupe, which eventually spread into a mass duping campaign.<br>The dupe was patched by the owner, penguin4215, due to lag caused by it.",
     "url" : "https://true-vanilla.fandom.com/wiki/Playerdata_Dupe"
+  },
+  {
+    id: "C", content: "Moon Era", 
+    title: "November 17th, 2020 - April 25th, 2021<br>This era is when the mass duping campaign alters the economy forever. redefining the playing experience on TVE.<br>This era ends with Gulag rushing the moon bases, draining spawn and proofing it against oceans.",
+    start: "2020-11-17", end: "2021-04-25",
+    type: "background", className: "moon"
   },
   {
     "id": 179,
@@ -724,6 +742,12 @@
     "type": "point",
   },
   {
+    id: "D", content: "Era of Silence I", 
+    title: "April 25th, 2021 - September 25th, 2021<br>With spawn proofed and dupe stashes taken, there is not much incentive for competitive players to play continuously.<br>Average playercount is less than 5, often hitting 0.",
+    start: "2021-04-25", end: "2021-09-25",
+    type: "background", className: "silent", url: "https://true-vanilla.fandom.com/wiki/Era_of_Silence"
+  },
+  {
     "id": 223,
     "content": "Necro Town",
     "start": "2021-05-15",
@@ -836,6 +860,12 @@
     "className": "tvg",
     "type": "point",
     "url": "https://true-vanilla.fandom.com/wiki/Third_Spawn_Party"
+  },
+  {
+    id: "E", content: "Chaotic Era", 
+    title: "September 26th, 2021 - September 18th, 2022<br>Anarchyville relits interest in the server, with activities transitioning into a community-focused character around the spawn region.<br>(contrary to the typical competitive and toxic character of the average anarchy server)",
+    start: "2021-09-26", end: "2022-09-18",
+    type: "background", className: "chaos",
   },
   {
     "id": 257,
@@ -1166,6 +1196,12 @@
     "url": "https://true-vanilla.fandom.com/wiki/Fifth_Spawn_Party"
   },
   {
+    id: "F", content: "Tukolh Era", 
+    title: "September 18th, 2022 - April 30th, 2023<br>The remaining playerbase centers activities around Tukolh, all the way until the server shuts down.",
+    start: "2022-09-18", end: "2023-04-30",
+    type: "background", className: "tuk",
+  },
+  {
     "id": 343,
     "content": "Tukolh",
     "start": "2022-09-18",
@@ -1325,6 +1361,12 @@
     "url": "https://true-vanilla.fandom.com/wiki/The_loss_of_the_world_data"
   },
   {
+    id: "G", content: "Era of Silence II", 
+    title: "January 18th, 2025 - October 5th, 2025<br>The prelude to this Era of Silence is similar to the first one.<br>Major groups scramble to find the last stashes revealed by the public world download, and start to lose interest when it is done.",
+    start: "2025-01-18", end: "2025-10-05",
+    type: "background", className: "silent",
+  },
+  {
     "id": 382,
     "content": "TVE Ownership Transfer IV",
     "start": "2025-01-18",
@@ -1479,6 +1521,9 @@
       editable: false,
       selectable: false,
       align: 'left',
+      zoomMax: 31536000000,
+      min: new Date('2020-01-01'),
+      max: new Date(),
       loadingScreenTemplate: function () {
         return "<h1>Loading...</h1>";
       },      

@@ -12,6 +12,14 @@
   color: white;
 }
 
+.vis-timeline .vis-itemset {
+  overflow: hidden !important;
+}
+
+.vis-item.vis-overflow {
+  overflow: hidden;
+}
+
 .vis-timeline .vis-item a {
   color: inherit;
   text-decoration: none;
@@ -27,9 +35,35 @@
   border-color: gold;
 }
 
+
+.vis-item.vis-background.gold {
+  background-color: rgba(255, 217, 0, 0.5);
+}
+
+.vis-item.vis-background.cool {
+  background-color: rgba(65, 105, 225, 0.4);
+}
+
+.vis-item.vis-background.moon {
+  background-color: rgba(128, 0, 128, 0.5);
+}
+
+.vis-item.vis-background.silent {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.vis-item.vis-background.chaos {
+  background-color: rgba(172, 255, 47, 0.4);
+}
+
+.vis-item.vis-background.tuk {
+  background-color: rgba(0, 128, 0, 0.33);
+}
+
 .vis-item.vis-background.dead {
   background-color: rgba(0, 0, 0, 0.66);
 }
+
 
 .vis-item.gulag {
   background-color: #721c24;
@@ -80,6 +114,7 @@
   background-color: black;
   border-color: black;
 }
+
 
 .vis-item.grief .vis-dot {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
