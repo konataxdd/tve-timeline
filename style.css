@@ -12,6 +12,10 @@
   color: white;
 }
 
+.vis-timeline .vis-item.vis-background .vis-item-content {
+  pointer-events: auto;
+}
+
 .vis-timeline .vis-item a {
   color: inherit;
   text-decoration: none;
