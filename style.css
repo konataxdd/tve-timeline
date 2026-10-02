@@ -13,7 +13,7 @@
 }
 
 .vis-timeline .vis-item.vis-background .vis-item-content {
-  pointer-events: auto;
+  pointer-events: auto !important;
 }
 
 .vis-timeline .vis-item a {
