@@ -12,14 +12,6 @@
   color: white;
 }
 
-.vis-timeline .vis-itemset {
-  overflow: hidden !important;
-}
-
-.vis-item.vis-overflow {
-  overflow: hidden;
-}
-
 .vis-timeline .vis-item a {
   color: inherit;
   text-decoration: none;
