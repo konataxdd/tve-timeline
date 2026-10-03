@@ -12,6 +12,10 @@
   color: white;
 } /* white text for boxes */
 
+.vis-item.vis-background .vis-item-content {
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 0px 0px 4px #ffffff;
+} /* outline for era names */
+
 .vis-timeline .vis-item.vis-background {
   pointer-events: auto !important;
 } /* doesnt work (background hovering) */
@@ -22,8 +26,8 @@
 } /* so that hyperlinks look normal */
 
 .vis-item.norm {
-  background-color: gold;
-  border-color: gold;
+  background-color: #daa520e0;
+  border-color: goldenrod;
 } /* color for less important events, maybe for all non-colored events? */
 
 /* era colors */
@@ -57,52 +61,52 @@
 
 /* group colors: border-color for points, background-color for boxes */
 .vis-item.gulag {
-  background-color: #721c24;
+  background-color: #721c25e0;
   border-color: #721c24;
 }
 
 .vis-item.zirya {
-  background-color: #d9383a;
+  background-color: #d9383ae0;
   border-color: #d9383a;
 }
 
 .vis-item.ocean {
-  background-color: #007fff;
+  background-color: #0080ffe0;
   border-color: #007fff;
 }
 
 .vis-item.luna {
-  background-color: #8a2be2;
+  background-color: #8a2be2e0;
   border-color: #8a2be2;
 }
 
 .vis-item.f {
-  background-color: #00ff88;
+  background-color: #00ff88b0;
   border-color: #00ff88;
 }
 
 .vis-item.wrath {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   border-color: black;
 }
 
 .vis-item.fry {
-  background-color: silver;
+  background-color: rgba(192, 192, 192, 0.88);
   border-color: silver;
 }
 
 .vis-item.tvg {
-  background-color: darkgreen;
+  background-color: rgba(0, 100, 0, 0.88);
   border-color: darkgreen;
 }
 
 .vis-item.cat {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.88);
   border-color: gray;
 }
 
 .vis-item.nomads {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   border-color: black;
 }
 
