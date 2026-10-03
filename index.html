@@ -8,7 +8,7 @@
   <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-
+<!-- Global timeline settings (font, background, border) -->
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -28,14 +28,16 @@
   <script>
     const container = document.getElementById('visualization');
     const groups = new vis.DataSet([{id: "gr", content: "Groups / Major Builds"},{id: "ud", content: ""}]);
-
-    const items = new vis.DataSet([
+    const items = new vis.DataSet([ // <br> for newlines, html code basically
   {
     id: "A", content: "Golden Era", 
-    title: "March 3rd, 2020 - June 29th, 2020<br>A time of chaos, curiosity, exploration and freedom, where nothing has been tried before.<br>Players who joined during this era are considered OG.<br>Playercount averaged above 18 at peak time, with lag caused by unrestricted travelling being common.<br>This is the time when TVE had 0 restrictive plugins, until the crash dupe.",
+    tooltipText: "March 3rd, 2020 - June 29th, 2020<br>A time of chaos, curiosity, exploration and freedom, where nothing has been tried before.<br>Players who joined during this era are considered OG.<br>Playercount averaged above 18 at peak time, with lag caused by unrestricted travelling being common.<br>This is the time when TVE had 0 restrictive plugins, until the crash dupe.",
     start: "2020-03-06", end: "2020-06-29",
-    type: "background", className: "gold"
-  },
+    type: "background", className: "gold",
+    template: function(item) {
+      return `<div title="${item.tooltipText}" style="width:100%; height:100%;">${item.content || ''}</div>`;
+    }
+  }, // Eras structured differently from regular timeline entries for easier differentiation
   {
     "id": 124,
     "content": "TVE Start Date",
@@ -43,7 +45,7 @@
     "group": "ud",
     "title": "March 6th, 2020<br>TVE is launched, along with its Discord server. Many Purity players flock to the server due to promotion on there.",
     "type": "point"
-  },
+  }, // always put the ud group for all new events that don't belong to the gr group
   {
     "id": 125,
     "content": "Dragon Egg Taken",
@@ -51,7 +53,7 @@
     "group": "ud",
     "title": "March 7th, 2020<br>Prominent Purity players kill the dragon within a day of the server's creation. The egg is taken (and presumed to still be owned by) StarBaron.",
     "type": "point"
-  },
+  }, // type point for events without an end date
   {
     "id": 126,
     "content": "First Ocean Maker",
@@ -61,7 +63,7 @@
     "title": "March 14th, 2020<br>Sheep's first ever Ocean Maker is launched.",
     "type": "point",
     "url": "https://true-vanilla.fandom.com/wiki/JustAnotherSheep"
-  },
+  }, // check style.css for classNames
   {
     "id": 127,
     "content": "Early North-South Spawn Ocean",
@@ -346,9 +348,12 @@
   },
   {
     id: "B", content: "Cooling Era", 
-    title: "June 29th, 2020 - November 17th, 2020<br>Feeling betrayed, most OG players leave, and as the server cools down, a loyal playerbase is estabilished.<br>The last pure era without dupes.",
+    tooltipText: "June 29th, 2020 - November 17th, 2020<br>Feeling betrayed, most OG players leave, and as the server cools down, a loyal playerbase is estabilished.<br>The last pure era without dupes.",
     start: "2020-06-29", end: "2020-11-17",
-    type: "background", className: "cool"
+    type: "background", className: "cool",
+    template: function(item) {
+      return `<div title="${item.tooltipText}" style="width:100%; height:100%;">${item.content || ''}</div>`;
+    }
   },
   {
     "id": 162,
@@ -457,9 +462,12 @@
   },
   {
     id: "C", content: "Moon Era", 
-    title: "November 17th, 2020 - April 25th, 2021<br>This era is when the mass duping campaign alters the economy forever. redefining the playing experience on TVE.<br>This era ends with Gulag rushing the moon bases, draining spawn and proofing it against oceans.",
+    tooltipText: "November 17th, 2020 - April 25th, 2021<br>This era is when the mass duping campaign alters the economy forever. redefining the playing experience on TVE.<br>This era ends with Gulag rushing the moon bases, draining spawn and proofing it against oceans.",
     start: "2020-11-17", end: "2021-04-25",
-    type: "background", className: "moon"
+    type: "background", className: "moon",
+    template: function(item) {
+      return `<div title="${item.tooltipText}" style="width:100%; height:100%;">${item.content || ''}</div>`;
+    }
   },
   {
     "id": 179,
@@ -743,9 +751,12 @@
   },
   {
     id: "D", content: "Era of Silence I", 
-    title: "April 25th, 2021 - September 26th, 2021<br>With spawn proofed and dupe stashes taken, there is not much incentive for competitive players to play continuously.<br>Average playercount is less than 5, often hitting 0.",
+    tooltipText: "April 25th, 2021 - September 26th, 2021<br>With spawn proofed and dupe stashes taken, there is not much incentive for competitive players to play continuously.<br>Average playercount is less than 5, often hitting 0.",
     start: "2021-04-25", end: "2021-09-26",
-    type: "background", className: "silent", url: "https://true-vanilla.fandom.com/wiki/Era_of_Silence"
+    type: "background", className: "silent", url: "https://true-vanilla.fandom.com/wiki/Era_of_Silence",
+    template: function(item) {
+      return `<div title="${item.tooltipText}" style="width:100%; height:100%;">${item.content || ''}</div>`;
+    }
   },
   {
     "id": 223,
@@ -863,9 +874,12 @@
   },
   {
     id: "E", content: "Chaotic Era", 
-    title: "September 26th, 2021 - September 18th, 2022<br>Anarchyville relits interest in the server, with activities transitioning into a community-focused character around the spawn region.<br>(contrary to the typical competitive and toxic character of the average anarchy server)",
+    tooltipText: "September 26th, 2021 - September 18th, 2022<br>Anarchyville relits interest in the server, with activities transitioning into a community-focused character around the spawn region.<br>(contrary to the typical competitive and toxic character of the average anarchy server)",
     start: "2021-09-26", end: "2022-09-18",
     type: "background", className: "chaos",
+    template: function(item) {
+      return `<div title="${item.tooltipText}" style="width:100%; height:100%;">${item.content || ''}</div>`;
+    }
   },
   {
     "id": 257,
@@ -1197,9 +1211,12 @@
   },
   {
     id: "F", content: "Tukolh Era", 
-    title: "September 18th, 2022 - April 30th, 2023<br>The remaining playerbase centers activities around Tukolh, all the way until the server shuts down.",
+    tooltipText: "September 18th, 2022 - April 30th, 2023<br>The remaining playerbase centers activities around Tukolh, all the way until the server shuts down.",
     start: "2022-09-18", end: "2023-04-30",
     type: "background", className: "tuk",
+    template: function(item) {
+      return `<div title="${item.tooltipText}" style="width:100%; height:100%;">${item.content || ''}</div>`;
+    }
   },
   {
     "id": 343,
@@ -1362,9 +1379,12 @@
   },
   {
     id: "G", content: "Era of Silence II", 
-    title: "January 18th, 2025 - October 5th, 2025<br>The prelude to this Era of Silence is similar to the first one.<br>Major groups scramble to find the last stashes revealed by the public world download, and start to lose interest when it is done.",
+    tooltipText: "January 18th, 2025 - October 5th, 2025<br>The prelude to this Era of Silence is similar to the first one.<br>Major groups scramble to find the last stashes revealed by the public world download, and start to lose interest when it is done.",
     start: "2025-01-18", end: "2025-10-05",
     type: "background", className: "silent",
+    template: function(item) {
+      return `<div title="${item.tooltipText}" style="width:100%; height:100%;">${item.content || ''}</div>`;
+    }
   },
   {
     "id": 382,
@@ -1521,22 +1541,21 @@
 
     const options = {
       editable: false,
-      selectable: false,
+      selectable: false, 
       align: 'left',
       loadingScreenTemplate: function () {
         return "<h1>Loading...</h1>";
-      },      
+      }, // doesnt work lol     
       template: function (item) {
         if (item.url) {
           return `<a href="${item.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">${item.content}</a>`;
-        }
+        } // for clickable urls
         return item.content;
       },
       margin: { item: {horizontal: 1, vertical: 5} }
     };
 
     const timeline = new vis.Timeline(container, items, groups, options);
-    timeline.addCustomTime('2020-06-03', 'ml');
   </script>
 </body>
 </html>

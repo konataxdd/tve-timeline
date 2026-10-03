@@ -7,8 +7,8 @@ This is the 6th such visual timeline in the history of TVE.
 
 Current maintainers:
 
-- EficaciousMig47 (extended the wiki timeline to 2026 + github)
-- exxxx (github, timeline's vis.js implementation)
+- EficaciousMig47 (extended the wiki timeline to 2026)
+- exxxx (vis.js implementation)
 
 Join the TVE Community Discord: https://discord.com/invite/Zfhxerf6wR
 

@@ -1,6 +1,6 @@
 .vis-item.vis-point .vis-item-content {
   color: black !important;
-}
+} /* black text for points and bg */
 
 .vis-timeline .vis-item.vis-box,
 .vis-timeline .vis-item.vis-range {
@@ -10,28 +10,29 @@
 .vis-timeline .vis-item.vis-box .vis-item-content,
 .vis-timeline .vis-item.vis-range .vis-item-content {
   color: white;
-}
+} /* white text for boxes */
+
+.vis-timeline .vis-item.vis-background {
+  pointer-events: auto !important;
+} 
 
 .vis-timeline .vis-item.vis-background .vis-item-content {
-  pointer-events: auto !important;
-}
+  width: 100%;
+  height: 100%;
+  padding: 0;
+} /* bg hovering */
 
 .vis-timeline .vis-item a {
   color: inherit;
   text-decoration: none;
-}
-
-.vis-custom-time.ml {
-  background-color: #ff0000;
-  width: 3px;
-}
+} /* so that hyperlinks look normal */
 
 .vis-item.norm {
   background-color: gold;
   border-color: gold;
-}
+} /* color for less important events, maybe for all non-colored events? */
 
-
+/* era colors */
 .vis-item.vis-background.gold {
   background-color: rgba(255, 217, 0, 0.5);
 }
@@ -60,7 +61,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-
+/* group colors: border-color for points, background-color for boxes */
 .vis-item.gulag {
   background-color: #721c24;
   border-color: #721c24;
@@ -111,17 +112,17 @@
   border-color: black;
 }
 
-
+/* specific to point events */
 .vis-item.grief .vis-dot {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   border-radius: 0;
-}
+} /* griefs or otherwise destructive events */
 
 .vis-item.ob .vis-dot {
   border-radius: 0;
-}
+} /* builds or other important contributions */
 
 .vis-item.bd {
   background-color: hotpink;
   border-color: hotpink;
-}
+} /* special for birthday events */
