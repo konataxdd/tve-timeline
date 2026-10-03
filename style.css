@@ -14,13 +14,7 @@
 
 .vis-timeline .vis-item.vis-background {
   pointer-events: auto !important;
-} 
-
-.vis-timeline .vis-item.vis-background .vis-item-content {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-} /* bg hovering */
+} /* doesnt work (background hovering) */
 
 .vis-timeline .vis-item a {
   color: inherit;
