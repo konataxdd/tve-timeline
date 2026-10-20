@@ -27,22 +27,26 @@
 
   <script>
     const container = document.getElementById('visualization');
-    const groups = new vis.DataSet([{id: "gr", content: "Groups / Major Builds"},{id: "ud", content: ""}]);
+    const groups = new vis.DataSet([{id: "e", content: "Eras"},{id: "gr", content: "Groups / Major Builds"},{id: "ud", content: ""}]);
     const items = new vis.DataSet([ // <br> for newlines, html code basically
   {
     id: "A", content: "Golden Era", 
     title: "March 3rd, 2020 - June 29th, 2020<br>A time of chaos, curiosity, exploration and freedom, where nothing has been tried before.<br>Players who joined during this era are considered OG.<br>Playercount averaged above 18 at peak time, with lag caused by unrestricted travelling being common.<br>This is the time when TVE had 0 restrictive plugins, until the crash dupe.",
     start: "2020-03-06", end: "2020-06-29",
     type: "background", className: "gold",
+  },
+  {
+    id: "Ax", content: "Golden Era", group: "e",
+    title: "March 3rd, 2020 - June 29th, 2020<br>A time of chaos, curiosity, exploration and freedom, where nothing has been tried before.<br>Players who joined during this era are considered OG.<br>Playercount averaged above 18 at peak time, with lag caused by unrestricted travelling being common.<br>This is the time when TVE had 0 restrictive plugins, until the crash dupe.",
+    start: "2020-03-06", end: "2020-06-29", className: "gold",
   }, // Eras structured differently from regular timeline entries for easier differentiation
   {
     "id": 124,
-    "content": "TVE Start Date",
-    "start": "2020-03-06",
-    "group": "ud",
-    "title": "March 6th, 2020<br>TVE is launched, along with its Discord server. Many Purity players flock to the server due to promotion on there.",
-    "type": "point"
-  }, // always put the ud group for all new events that don't belong to the gr group
+    "content": "1st Administration",
+    "start": "2020-03-06", "end": "2021-02-16",
+    "group": "e", "className": "norm",
+    "title": "March 6th, 2020 - February 16th, 2021<br>TVE is launched by penguin4215, the owner of Purity Vanilla.<br>Many Purity players flock to the server due to promotion on there."
+  }, // always put the ud group for all new events that don't belong to the gr or e group
   {
     "id": 125,
     "content": "Dragon Egg Taken",
@@ -350,6 +354,11 @@
     type: "background", className: "cool"
   },
   {
+    id: "Bx", content: "Cooling Era", group: "e",
+    title: "June 29th, 2020 - November 17th, 2020<br>Feeling betrayed, most OG players leave, and as the server cools down, a loyal playerbase is estabilished.<br>The last pure era without dupes.",
+    start: "2020-06-29", end: "2020-11-17", className: "cool"
+  },
+  {
     "id": 162,
     "content": "Glitched Portal",
     "start": "2020-06-30",
@@ -460,6 +469,11 @@
     title: "November 17th, 2020 - April 25th, 2021<br>This era is when the mass duping campaign alters the economy forever. redefining the playing experience on TVE.<br>This era ends with Gulag rushing the moon bases, draining spawn and proofing it against oceans.",
     start: "2020-11-17", end: "2021-04-25",
     type: "background", className: "moon"
+  },
+  {
+    id: "Cx", content: "Moon Era", group: "e",
+    title: "November 17th, 2020 - April 25th, 2021<br>This era is when the mass duping campaign alters the economy forever. redefining the playing experience on TVE.<br>This era ends with Gulag rushing the moon bases, draining spawn and proofing it against oceans.",
+    start: "2020-11-17", end: "2021-04-25", className: "moon"
   },
   {
     "id": 179,
@@ -599,10 +613,9 @@
   {
     "id": 201,
     "content": "2nd Administration",
-    "start": "2021-02-16",
-    "group": "ud",
-    "title": "February 16th, 2021<br>Penguin transfers ownership to sleepylessons, and cuts ties with TVE for good.",
-    "type": "point",
+    "start": "2021-02-16", "end": "2021-09-22",
+    "group": "e", "className": "norm",
+    "title": "February 16th, 2021 - September 22nd, 2021<br>Penguin transfers ownership to sleepylessons, and cuts ties with TVE for good.",
     "url": "https://true-vanilla.fandom.com/wiki/Sleepylessons"
   },
   {
@@ -747,6 +760,11 @@
     start: "2021-04-25", end: "2021-09-26",
     type: "background", className: "silent", url: "https://true-vanilla.fandom.com/wiki/Era_of_Silence"
   },
+    {
+    id: "Dx", content: "Era of Silence I", group: "e",
+    title: "April 25th, 2021 - September 26th, 2021<br>With spawn proofed and dupe stashes taken, there is not much incentive for competitive players to play continuously.<br>Average playercount is less than 5, often hitting 0.",
+    start: "2021-04-25", end: "2021-09-26", className: "silent", url: "https://true-vanilla.fandom.com/wiki/Era_of_Silence"
+  },
   {
     "id": 223,
     "content": "Necro Town",
@@ -845,10 +863,9 @@
   {
     "id": 251,
     "content": "3rd Administration",
-    "start": "2021-09-22",
-    "group": "ud",
-    "title": "September 22nd, 2021<br>TVE gets updated to 1.17.1, now fully owned by Aermyne and turret001.",
-    "type": "point",
+    "start": "2021-09-22", "end": "2022-12-15",
+    "group": "e", "className": "norm",
+    "title": "September 22nd, 2021 - December 15th, 2022<br>TVE gets updated to 1.17.1, now fully owned by Aermyne and turret001.",
     "url": "https://true-vanilla.fandom.com/wiki/Aermyne"
   },
   {
@@ -866,6 +883,11 @@
     title: "September 26th, 2021 - September 18th, 2022<br>Anarchyville relits interest in the server, with activities transitioning into a community-focused character around the spawn region.<br>(contrary to the typical competitive and toxic character of the average anarchy server)",
     start: "2021-09-26", end: "2022-09-18",
     type: "background", className: "chaos",
+  },
+  {
+    id: "Ex", content: "Chaotic Era", group: "e",
+    title: "September 26th, 2021 - September 18th, 2022<br>Anarchyville relits interest in the server, with activities transitioning into a community-focused character around the spawn region.<br>(contrary to the typical competitive and toxic character of the average anarchy server)",
+    start: "2021-09-26", end: "2022-09-18", className: "chaos",
   },
   {
     "id": 257,
@@ -1203,6 +1225,11 @@
     type: "background", className: "tuk",
   },
   {
+    id: "Fx", content: "Tukolh Era", group: "e", 
+    title: "September 18th, 2022 - April 30th, 2023<br>The remaining playerbase centers activities around Tukolh, all the way until the server shuts down.",
+    start: "2022-09-18", end: "2023-04-30", className: "tuk",
+  },
+  {
     "id": 343,
     "content": "Tukolh",
     "start": "2022-09-18",
@@ -1265,10 +1292,9 @@
   {
     "id": 358,
     "content": "4th Administration",
-    "start": "2022-12-15",
-    "group": "ud",
-    "title": "December 15th, 2022<br>Now run by NaiHaz (and obyx), TVE comes back in 1.19.2.",
-    "type": "point",
+    "start": "2022-12-15", "end": "2023-04-30",
+    "group": "e", "className": "norm",
+    "title": "December 15th, 2022 - April 30th, 2023<br>Now run by NaiHaz (and obyx), TVE comes back in 1.19.2.",
     "url": "https://true-vanilla.fandom.com/wiki/NaiHaz"
   },
   {
@@ -1369,12 +1395,16 @@
     type: "background", className: "silent",
   },
   {
+    id: "Gx", content: "Era of Silence II", group: "e", 
+    title: "January 18th, 2025 - October 5th, 2025<br>The prelude to this Era of Silence is similar to the first one.<br>Major groups scramble to find the last stashes revealed by the public world download, and start to lose interest when it is done.",
+    start: "2025-01-18", end: "2025-10-05", className: "silent",
+  },
+  {
     "id": 382,
     "content": "5th Administration",
-    "start": "2025-01-18",
-    "group": "ud",
-    "type": "point",
-    "title": "January 18th, 2025<br>TVE comes back up, in 1.21.4, run by gite as the new admin.<br>(Note: Technically not transferred, more like taken up, since the world download was public at this time. The world is used as is.)",
+    "start": "2025-01-18", "end": "2025-10-05",
+    "group": "e", "className": "norm",
+    "title": "January 18th, 2025 - October 5th, 2025<br>TVE comes back up, in 1.21.4, run by gite as the new admin.<br>(Note: Technically not transferred, more like taken up, since the world download was public at this time. The world is used as is.)",
     "url": "https://true-vanilla.fandom.com/wiki/Gite"
   },
   {
