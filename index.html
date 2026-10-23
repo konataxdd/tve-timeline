@@ -27,7 +27,7 @@
 
   <script>
     const container = document.getElementById('visualization');
-    const groups = new vis.DataSet([{id: "e", content: "Eras"},{id: "gr", content: "Groups / Major Builds"},{id: "ud", content: ""}]);
+    const groups = new vis.DataSet([{id: "e", content: "Eras"},{id: "ea", content: "Admins"},{id: "gr", content: "Groups / Major Builds"},{id: "ud", content: "Events"}]);
     const items = new vis.DataSet([ // <br> for newlines, html code basically
   {
     id: "A", content: "Golden Era", 
@@ -44,8 +44,9 @@
     "id": 124,
     "content": "1st Administration",
     "start": "2020-03-06", "end": "2021-02-15",
-    "group": "e", "className": "norm",
-    "title": "March 6th, 2020 - February 16th, 2021<br>TVE is launched by penguin4215, the owner of Purity Vanilla.<br>Many Purity players flock to the server due to promotion on there."
+    "group": "ea", "className": "norm",
+    "title": "March 6th, 2020 - February 16th, 2021<br>TVE is launched by penguin4215, the owner of Purity Vanilla.<br>Many Purity players flock to the server due to promotion on there.",
+    "url": "https://true-vanilla.fandom.com/wiki/Penguin4215"
   }, // always put the ud group for all new events that don't belong to the gr or e group
   {
     "id": 125,
@@ -158,6 +159,7 @@
     "start": "2020-04-30",
     "end": "2020-05-24",
     "group": "ud",
+    "className": "norm",
     "title": "April 30th, 2020 - May 24th, 2020<br>A player named Lidee set out to destroy all 128 end portals on TVE.<br>Gulag Gang and Dauntless declared Lidee KOS (Kill On Sight), fighting him at spawn and even raiding his base. Portals were protected by lava.<br>Lidee was thought to have succeeded, but a while later it turned out that Lidee had kept 2 portals to himself.",
     "url": "https://true-vanilla.fandom.com/wiki/End_Portal_War_(2020)"
   },
@@ -614,7 +616,7 @@
     "id": 201,
     "content": "2nd Administration",
     "start": "2021-02-16", "end": "2021-09-21",
-    "group": "e", "className": "norm",
+    "group": "ea", "className": "norm",
     "title": "February 16th, 2021 - September 22nd, 2021<br>Penguin transfers ownership to sleepylessons, and cuts ties with TVE for good.",
     "url": "https://true-vanilla.fandom.com/wiki/Sleepylessons"
   },
@@ -864,7 +866,7 @@
     "id": 251,
     "content": "3rd Administration",
     "start": "2021-09-22", "end": "2022-12-14",
-    "group": "e", "className": "norm",
+    "group": "ea", "className": "norm",
     "title": "September 22nd, 2021 - December 15th, 2022<br>TVE gets updated to 1.17.1, now fully owned by Aermyne and turret001.",
     "url": "https://true-vanilla.fandom.com/wiki/Aermyne"
   },
@@ -1293,7 +1295,7 @@
     "id": 358,
     "content": "4th Administration",
     "start": "2022-12-15", "end": "2023-04-29",
-    "group": "e", "className": "norm",
+    "group": "ea", "className": "norm",
     "title": "December 15th, 2022 - April 30th, 2023<br>Now run by NaiHaz (and obyx), TVE comes back in 1.19.2.",
     "url": "https://true-vanilla.fandom.com/wiki/NaiHaz"
   },
@@ -1403,7 +1405,7 @@
     "id": 382,
     "content": "5th Administration",
     "start": "2025-01-18", "end": "2025-10-04",
-    "group": "e", "className": "norm",
+    "group": "ea", "className": "norm",
     "title": "January 18th, 2025 - October 5th, 2025<br>TVE comes back up, in 1.21.4, run by gite as the new admin.<br>(Note: Technically not transferred, more like taken up, since the world download was public at this time. The world is used as is.)",
     "url": "https://true-vanilla.fandom.com/wiki/Gite"
   },
